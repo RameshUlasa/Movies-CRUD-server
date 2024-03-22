@@ -1,24 +1,21 @@
 # Movies
 
-Given two files `app.js` and a database file `moviesData.db` consisting of two tables `movie` and `director`.
+This project implements a `CRUD` (Create, Read, Update, Delete) server for managing `movies` and `directors`. It includes APIs to perform operations such as `creating new movies, updating movie details, retrieving movie information, deleting movies, and fetching lists of movies and directors`.
 
-Write APIs to perform CRUD operations on the tables `movie`, `director` containing the following columns,
+## Deployed URL
 
-**Movie Table**
+The server is deployed and accessible at [https://movies-crud-server.onrender.com](https://movies-crud-server.onrender.com).
 
-| Columns     | Type    |
-| ----------- | ------- |
-| movie_id    | INTEGER |
-| director_id | INTEGER |
-| movie_name  | TEXT    |
-| lead_actor  | TEXT    |
+## API Endpoints
 
-**Director Table**
+- **GET  `https://movies-crud-server.onrender.com/movies/`**: Retrieve a list of all movies.
+- **POST  `https://movies-crud-server.onrender.com/movies/`**: Create a new movie.
+- **GET  `https://movies-crud-server.onrender.com/movies/:movieId/`**: Retrieve details of a specific movie.
+- **PUT  `https://movies-crud-server.onrender.com/movies/:movieId/`**: Update details of a specific movie.
+- **DELETE  `https://movies-crud-server.onrender.com/movies/:movieId/`**: Delete a movie.
+- **GET  `https://movies-crud-server.onrender.com/directors/`**: Retrieve a list of all directors.
+- **GET  `https://movies-crud-server.onrender.com/directors/:directorId/movies/`**: Retrieve movies directed by a specific director.
 
-| Columns       | Type    |
-| ------------- | ------- |
-| director_id   | INTEGER |
-| director_name | TEXT    |
 
 ### API 1
 
